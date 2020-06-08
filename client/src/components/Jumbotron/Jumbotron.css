@@ -34,8 +34,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* .myPic {
+  .myPic {
     max-width: 20vw;
     margin: 4vh 4vw;
-  } */
+  }
 }

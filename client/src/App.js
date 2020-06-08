@@ -11,24 +11,24 @@ const App = () => {
         <Router>
             <div>
                 <TopNav />
-                <Jumbotron />
+
 
                 <Switch>
 
-                    <Route path='/aboutMe'>
-                        ABOUT ME GOES HERE
+                    <Route path='/about'>
+                        <Jumbotron />
                     </Route>
 
                     <Route path='/portfolio'>
-                        PORTFOLIO GOES HERE
+                        {/* PORTFOLIO GOES HERE */}
                     </Route>
 
                     <Route path='/resume'>
-                        RESUME GOES HERE
+                        {/* RESUME GOES HERE */}
                     </Route>
 
-                    <Route path='/contactMe'>
-                        CONTACT ME GOES HERE
+                    <Route path='/contact'>
+                        {/* CONTACT ME GOES HERE */}
                     </Route>
 
                 </Switch>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { Link } from 'react-router-dom';
 import './TopNav.css';
 
 class TopNav extends Component {
@@ -15,13 +16,13 @@ class TopNav extends Component {
                 </div>
 
                 <ul className={`navLinks ${this.state.toggle ? "nav-active" : ""}`}>
-                    <li><a className={`navLinkFade1 ${this.state.toggle ? "toggled" : ""}`} href="#">About Me</a></li>
+                    <li><a className={`navLinkFade1 ${this.state.toggle ? "toggled" : ""}`} href="/about">About Me</a></li>
 
-                    <li><a className={`navLinkFade2 ${this.state.toggle ? "toggled" : ""}`} href="#">Portfolio</a></li>
+                    <li><a className={`navLinkFade2 ${this.state.toggle ? "toggled" : ""}`} href="/portfolio">Portfolio</a></li>
 
-                    <li><a className={`navLinkFade2 ${this.state.toggle ? "toggled" : ""}`} href="#">Resume</a></li>
+                    <li><a className={`navLinkFade2 ${this.state.toggle ? "toggled" : ""}`} href="/resume">Resume</a></li>
 
-                    <li><a className={`navLinkFade3 ${this.state.toggle ? "toggled" : ""}`} href="#">Contact Me</a></li>
+                    <li><a className={`navLinkFade3 ${this.state.toggle ? "toggled" : ""}`} href="/contact">Contact Me</a></li>
 
                 </ul>
 
