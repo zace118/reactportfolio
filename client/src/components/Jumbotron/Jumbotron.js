@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Jumbotron.css';
-import Zac from '../../images/154835.jpeg'
+import zac from '../../images/zac.jpeg'
 class Jumbotron extends Component {
 
     render() {
         return (
             <div className="jumbotron" id="aboutMe">
-                <img className="myPic" src={Zac} />
+                <img className="myPic" src={zac} />
 
                 <div className="blurb">
                     <h1 id="blurbTitle">Hello, and welcome to my portfolio! </h1>
