@@ -1,0 +1,41 @@
+.jumbotron {
+  background-color: aliceblue;
+  margin: 10vh 10vw;
+  display: flex;
+}
+
+.myPic {
+  max-width: 200px;
+  margin: 4vh 4vw;
+}
+
+.blurb {
+  color: #304d6d;
+}
+
+#blurbTitle {
+  margin: 4vh 2vw;
+}
+
+#blurbBody {
+  margin: 4vh 4vw;
+}
+
+#navBlurb {
+  margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .myPic {
+    max-width: 40%;
+    max-height: fit-content;
+    margin: 4vh 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .myPic {
+    max-width: 20vw;
+    margin: 4vh 4vw;
+  } */
+}

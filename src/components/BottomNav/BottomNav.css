@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Foot height */
+  height: 2.5rem;
+}
+
+#icons {
+  margin: 0 45vw;
+  width: auto;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10%;
+}
