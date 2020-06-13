@@ -9,11 +9,11 @@ class BottomNav extends Component {
                 <div id="icons">
                     {/* Github Icon */}
                     <a href="https://github.com/zace118"><i className="fab fa-github-square fa-2x"
-                        id="githubIcon" style={{ color: "#304D6D" }}></i>
+                        id="githubIcon"></i>
                     </a>
                     {/* LinkedIn Icon */}
                     <a href="https://www.linkedin.com/in/zachary-eskridge/"><i className="fab fa-linkedin fa-2x"
-                        id="linkedinIcon" style={{ color: "#304D6D" }}></i>
+                        id="linkedinIcon"></i>
                     </a>
                 </div>
             </footer>

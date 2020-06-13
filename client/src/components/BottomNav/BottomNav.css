@@ -7,10 +7,11 @@
 }
 
 #icons {
-  margin: 0 45vw;
-  width: auto;
-  background-color: aliceblue;
   display: flex;
-  justify-content: space-evenly;
-  border-radius: 10%;
+  justify-content: center;
+}
+
+.fab {
+  margin: 0 5px 0;
+  color: #1b4965;
 }

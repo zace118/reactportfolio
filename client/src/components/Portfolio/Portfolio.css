@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+  margin: 5vh 0 5vh;
+}
+
+p {
+  text-align: center;
+  margin: 5vh 20% 5vh;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh 30% 5vh;
+}
+
+.tileDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh 10% 5vh;
+}
+
+.text {
+  color: #82a0bc;
+  text-shadow: 2px 2px 0 #000;
+}
