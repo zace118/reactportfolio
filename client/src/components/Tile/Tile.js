@@ -14,10 +14,10 @@ const Tile = props => {
         alignItems: 'center',
         backgroundImage: `url(${props.background})`,
         backgroundSize: 'cover'
-    }
+    };
 
     return (
-        <div style={tileStyle} onMouseOver={() => props.bgHandler(`${props.title}`, `${props.background}`)}>
+        <div style={tileStyle} onMouseOver={() => props.bgHandler(`${props.title}`, `${props.background}`, `${props.blurb}`)}>
             <h4>{props.title}</h4>
         </div>
     )

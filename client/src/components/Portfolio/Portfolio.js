@@ -13,27 +13,30 @@ const Portfolio = () => {
 
     const [bgState, setBgState] = useState();
     const [bgTitle, setBgTitle] = useState('');
+    const [bgBlurb, setBgBlurb] = useState('');
 
     const portStyle = {
+        margin: '2vh 5vw 0',
+        height: '50vh',
         backgroundImage: `url(${bgState})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         transition: 'all 0.5s linear',
     };
 
-    const bgHandler = (title, bg) => {
+    const bgHandler = (title, bg, blurb) => {
         setBgTitle(title)
         setBgState(bg)
+        setBgBlurb(blurb)
     };
 
     return (
-        <div className='' style={portStyle}>
+        <div>
+            <div style={portStyle}></div>
 
-            <div className='text'>
-                <h1 className='projectTitle'>{bgTitle}</h1>
+            <h1 className='projectTitle'>{bgTitle}</h1>
 
-                <p className='projectBlurb'>Migas fingerstache leggings tilde. Try-hard normcore literally bespoke craft beer hammock. Scenester taiyaki air plant biodiesel, drinking vinegar tattooed messenger bag. Yuccie jianbing four loko leggings helvetica +1 vice literally. Celiac kitsch sriracha, yuccie la croix banh mi portland keytar. Man braid subway tile shaman hoodie, lo-fi man bun locavore biodiesel.</p>
-            </div>
+            <p className='projectBlurb'>{bgBlurb}</p>
 
 
             <div className='buttonDiv'>
@@ -46,35 +49,68 @@ const Portfolio = () => {
                 <Tile title='Crusine'
                     background={CrusineBG}
                     bgHandler={bgHandler}
+                    blurb={`Built with: 
+                    React,
+                    Javascript,
+                    Chart.js,
+                    MySQL
+                    `}
                 />
 
                 <Tile title='Password Generator'
                     background={PasswordGeneratorBG}
                     bgHandler={bgHandler}
+                    blurb={`Built with: 
+                    Javascript,
+                    jQuery
+                    `}
                 />
 
                 <Tile title='Food For Two!'
                     background={FoodForTwoBG}
                     bgHandler={bgHandler}
+                    blurb={`Built with: 
+                    Javascript,
+                    jQuery,
+                    WebAPIs,
+                    AJAX
+                    `}
                 />
 
                 <Tile title='Weather App'
                     background={WeatherAppBG}
                     bgHandler={bgHandler}
+                    blurb={`Built with: 
+                    Javascript,
+                    jQuery,
+                    Web APIs,
+                    Ajax
+                    `}
                 />
 
                 <Tile title='Shape Shifter'
                     background={ShapeShifterBG}
                     bgHandler={bgHandler}
+                    blurb={`Built with: 
+                    React,
+                    Javscript
+                    `}
                 />
 
                 <Tile title='Bottoms Up'
                     background={BottomsUpBG}
                     bgHandler={bgHandler}
+                    blurb={`Built with: 
+                    jQuery,
+                    Node.js,
+                    Express.js,
+                    MySQL,
+                    Sequelize
+                    `}
                 />
             </div>
-
         </div>
+
     )
 };
 

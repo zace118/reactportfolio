@@ -1,26 +1,24 @@
 h1 {
   text-align: center;
-  margin: 5vh 0 5vh;
+  margin: 1vh 0 1vh;
+  color: #1b4965;
 }
 
-p {
+.projectBlurb {
   text-align: center;
-  margin: 5vh 20% 5vh;
+  margin: 1vh 20% 1vh;
+  background-color: #1b4965;
+  color: aliceblue;
 }
 
 .buttonDiv {
   display: flex;
   justify-content: space-around;
-  margin: 5vh 30% 5vh;
+  margin: 3vh 30% 3vh;
 }
 
 .tileDiv {
   display: flex;
   justify-content: space-around;
   margin: 5vh 10% 5vh;
-}
-
-.text {
-  color: #82a0bc;
-  text-shadow: 2px 2px 0 #000;
 }
