@@ -1,0 +1,77 @@
+.resume {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 40vw;
+  margin: 2vh 30vw;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#download {
+  margin: 2vh 40vw 0;
+  background-color: #235e82;
+  border: 2px solid #1b4965;
+  padding: 15px 32px;
+  box-shadow: 10px 5px 5px gray;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .resume {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 50vw;
+    margin: 2vh 26vw;
+  }
+
+  #download {
+    margin: 2vh 34vw 0;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .resume {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 63vw;
+    margin: 2vh 19vw;
+  }
+
+  #download {
+    margin: 2vh 29vw 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .resume {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 82vw;
+    margin: 2vh 10vw;
+  }
+
+  #download {
+    margin: 2vh 25vw 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .resume {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 96vw;
+    margin: 2vh 2vw;
+  }
+
+  #download {
+    margin: 2vh 18vw 0;
+  }
+}

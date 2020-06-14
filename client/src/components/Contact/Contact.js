@@ -1,10 +1,16 @@
 import React from 'react';
 
 const Contact = () => {
+
+    const contactStyle = {
+        backgroundColor: 'black',
+        opacity: '0.5',
+        height: '80vh',
+        width: '40vw'
+    };
+
     return (
-        <div>
-            Hello world
-        </div>
+        <div className="contact" style={contactStyle}></div>
     )
 };
 

@@ -16,9 +16,14 @@ const Tile = props => {
         backgroundSize: 'cover'
     };
 
+    const smTitle = {
+        backgroundColor: 'black'
+
+    }
+
     return (
         <div style={tileStyle} onMouseOver={() => props.stateHandler(`${props.title}`, `${props.background}`, `${props.blurb}`)}>
-            <h4>{props.title}</h4>
+            <h4 style={smTitle}>{props.title}</h4>
         </div>
     )
 }
