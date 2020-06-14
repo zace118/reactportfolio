@@ -36,6 +36,7 @@
 @media screen and (max-width: 768px) {
   .myPic {
     max-width: 20vw;
+    max-height: fit-content;
     margin: 4vh 4vw;
   }
 }

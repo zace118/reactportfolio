@@ -14,6 +14,8 @@ const Portfolio = () => {
     const [bgState, setBgState] = useState();
     const [bgTitle, setBgTitle] = useState('');
     const [bgBlurb, setBgBlurb] = useState('');
+    const [codeURL, setCodeURL] = useState('');
+    const [depProjURL, setDepProjURL] = useState('');
 
     const portStyle = {
         margin: '2vh 5vw 0',
@@ -24,15 +26,52 @@ const Portfolio = () => {
         transition: 'all 0.5s linear',
     };
 
-    const bgHandler = (title, bg, blurb) => {
-        setBgTitle(title)
-        setBgState(bg)
-        setBgBlurb(blurb)
-    };
+    const stateHandler = (title, bg, blurb) => {
+        setBgTitle(title);
+        setBgState(bg);
+        setBgBlurb(blurb);
+
+        //Switch case for setting depProjState and codeState
+        switch (bgTitle) {
+            case 'Crusine':
+                setCodeURL('https://github.com/Evan-M-Py/crusine');
+                setDepProjURL('https://crusine.herokuapp.com/');
+                break;
+
+            case 'Password Generator':
+                setCodeURL('https://github.com/zace118/HW-Password-Generator');
+                setDepProjURL('https://zace118.github.io/HW-Password-Generator/');
+                break;
+
+            case 'Food For Two!':
+                setCodeURL('https://github.com/williamrichman/Project1');
+                setDepProjURL('https://williamrichman.github.io/Project1/');
+                break;
+
+            case 'Weather App':
+                setCodeURL('https://github.com/zace118/HW-Weather-App');
+                setDepProjURL('https://zace118.github.io/HW-Weather-App/');
+                break;
+
+            case 'Shape Shifter':
+                setCodeURL('https://github.com/zace118/ShapeShifter');
+                setDepProjURL('https://shapeshifter-zace118.netlify.app/');
+                break;
+
+            case 'Bottoms Up':
+                setCodeURL('https://bottoms-up-app.herokuapp.com/');
+                setDepProjURL('https://github.com/zace118/BottomsUp');
+                break;
+
+            default:
+                break;
+        };
+
+    }
 
     return (
         <div>
-            <div style={portStyle}></div>
+            <div className='screenshot' style={portStyle}></div>
 
             <h1 className='projectTitle'>{bgTitle}</h1>
 
@@ -40,15 +79,17 @@ const Portfolio = () => {
 
 
             <div className='buttonDiv'>
-                <Button input='See the Code' />
-                <Button input='See the Project' />
+                <Button id='code' input='See the Code'
+                    url={codeURL} />
+                <Button id='depProj' input='See the Project'
+                    url={depProjURL} />
             </div>
 
             <div className='tileDiv'>
 
                 <Tile title='Crusine'
                     background={CrusineBG}
-                    bgHandler={bgHandler}
+                    stateHandler={stateHandler}
                     blurb={`Built with: 
                     React,
                     Javascript,
@@ -59,7 +100,7 @@ const Portfolio = () => {
 
                 <Tile title='Password Generator'
                     background={PasswordGeneratorBG}
-                    bgHandler={bgHandler}
+                    stateHandler={stateHandler}
                     blurb={`Built with: 
                     Javascript,
                     jQuery
@@ -68,7 +109,7 @@ const Portfolio = () => {
 
                 <Tile title='Food For Two!'
                     background={FoodForTwoBG}
-                    bgHandler={bgHandler}
+                    stateHandler={stateHandler}
                     blurb={`Built with: 
                     Javascript,
                     jQuery,
@@ -79,7 +120,7 @@ const Portfolio = () => {
 
                 <Tile title='Weather App'
                     background={WeatherAppBG}
-                    bgHandler={bgHandler}
+                    stateHandler={stateHandler}
                     blurb={`Built with: 
                     Javascript,
                     jQuery,
@@ -90,7 +131,7 @@ const Portfolio = () => {
 
                 <Tile title='Shape Shifter'
                     background={ShapeShifterBG}
-                    bgHandler={bgHandler}
+                    stateHandler={stateHandler}
                     blurb={`Built with: 
                     React,
                     Javscript
@@ -99,7 +140,7 @@ const Portfolio = () => {
 
                 <Tile title='Bottoms Up'
                     background={BottomsUpBG}
-                    bgHandler={bgHandler}
+                    stateHandler={stateHandler}
                     blurb={`Built with: 
                     jQuery,
                     Node.js,

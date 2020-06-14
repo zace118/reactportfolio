@@ -4,7 +4,7 @@ import './App.css';
 import TopNav from './components/TopNav/TopNav';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Portfolio from './components/Portfolio/Portfolio';
-
+import Contact from './components/Contact/Contact';
 import BottomNav from './components/BottomNav/BottomNav';
 
 const App = () => {
@@ -25,12 +25,8 @@ const App = () => {
                         <Portfolio />
                     </Route>
 
-                    <Route path='/resume'>
-                        {/* RESUME GOES HERE */}
-                    </Route>
-
                     <Route path='/contact'>
-                        {/* CONTACT ME GOES HERE */}
+                        <Contact />
                     </Route>
 
                 </Switch>

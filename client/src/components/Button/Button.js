@@ -15,7 +15,9 @@ const Button = props => {
     }
 
     return (
-        <input type="button" className="button" value={props.input} style={buttonStyle} />
+        <a href={props.url}>
+            <input type="button" className="button" value={props.input} style={buttonStyle} />
+        </a>
     )
 }
 

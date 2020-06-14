@@ -17,7 +17,7 @@ const Tile = props => {
     };
 
     return (
-        <div style={tileStyle} onMouseOver={() => props.bgHandler(`${props.title}`, `${props.background}`, `${props.blurb}`)}>
+        <div style={tileStyle} onMouseOver={() => props.stateHandler(`${props.title}`, `${props.background}`, `${props.blurb}`)}>
             <h4>{props.title}</h4>
         </div>
     )

@@ -20,7 +20,7 @@ class TopNav extends Component {
 
                     <li><a className={`navLinkFade2 ${this.state.toggle ? "toggled" : ""}`} href="/portfolio">Portfolio</a></li>
 
-                    <li><a className={`navLinkFade2 ${this.state.toggle ? "toggled" : ""}`} href="/resume">Resume</a></li>
+                    {/* <li><a className={`navLinkFade2 ${this.state.toggle ? "toggled" : ""}`} href="/resume">Resume</a></li> */}
 
                     <li><a className={`navLinkFade3 ${this.state.toggle ? "toggled" : ""}`} href="/contact">Contact Me</a></li>
 
