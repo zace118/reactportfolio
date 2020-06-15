@@ -13,7 +13,7 @@ const ResumeDiv = () => {
     return (
         <div>
             <button id='download'>
-                <a href='../../../assets/Zac Eskridge_Resume.pdf' download>
+                <a className='downloadAnchor' href='../../../assets/Zac Eskridge_Resume.pdf' download>
                     Click here to download a PDF copy
                 </a>
             </button>

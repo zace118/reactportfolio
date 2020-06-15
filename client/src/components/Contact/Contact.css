@@ -18,6 +18,8 @@
 
 .linkText {
   text-shadow: 2px 2px black;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .contactBlurb {

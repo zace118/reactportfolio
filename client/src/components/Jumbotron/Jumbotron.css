@@ -23,6 +23,12 @@
 
 #navBlurb {
   margin-bottom: 2vh;
+  text-decoration: none;
+  color: #1b4965;
+}
+
+#navBlurbAnchor {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
