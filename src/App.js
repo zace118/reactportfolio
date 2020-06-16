@@ -2,7 +2,8 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Redirect
 } from 'react-router-dom';
 import './App.css';
 import TopNav from './components/TopNav/TopNav';
@@ -24,7 +25,7 @@ const App = () => {
                 <Switch>
 
                     <Route path='/'>
-                        <Jumbotron />
+                        <Redirect to='/about' />
                     </Route>
 
                     <Route path='/about'>
