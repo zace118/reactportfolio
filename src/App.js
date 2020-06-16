@@ -25,7 +25,7 @@ const App = () => {
                 <Switch>
 
                     <Route path='/'>
-                        <>Hi, welcome to my functinoing website</>
+                        <Jumbotron />
                     </Route>
 
                     <Route path='/about'>
