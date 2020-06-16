@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 import './App.css';
 import TopNav from './components/TopNav/TopNav';
 import Jumbotron from './components/Jumbotron/Jumbotron';
@@ -18,6 +23,10 @@ const App = () => {
 
 
                 <Switch>
+
+                    <Route path='/'>
+                        <>Hi, welcome to my functinoing website</>
+                    </Route>
 
                     <Route path='/about'>
                         <Jumbotron />
