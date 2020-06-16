@@ -31,15 +31,15 @@ const App = () => {
                         <Jumbotron />
                     </Route>
 
-                    <Route path='/portfolio'>
+                    <Route exact path='/portfolio'>
                         <Portfolio />
                     </Route>
 
-                    <Route path='/resume'>
+                    <Route exact path='/resume'>
                         <ResumeDiv />
                     </Route>
 
-                    <Route path='/contact'>
+                    <Route exact path='/contact'>
                         <Contact />
                     </Route>
 
