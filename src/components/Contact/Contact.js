@@ -15,7 +15,7 @@ const Contact = () => {
                 <ul className="contactList">
 
                     <i className="fas fa-envelope fa-3x" style={{ color: '#91c9e9' }}></i>
-                    <li className="contactListItem" id="email"><a className='linkText' href="mailto:zace118@gmail.com">zace118@gmail.com</a>
+                    <li className="contactListItem" id="email"><a className='linkText' href="mailto:zace118@gmail.com" subject='Contacting through your portfolio'>zace118@gmail.com</a>
                     </li>
                     <br />
                     <i className="fab fa-github fa-3x" style={{ color: '#91c9e9' }}></i>
