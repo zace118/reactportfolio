@@ -1,4 +1,4 @@
-# [Portfolio](zaceskridge.netlify.app)
+# [Portfolio](https://zaceskridge.netlify.app)
 
 Personal portfolio that display my favorite projects I've done, contact info, and a blurb about myself.
 
