@@ -23,9 +23,9 @@ const App = () => {
 
                 <Switch>
 
-                    {/* <Route path='/'>
+                    <Route path='/'>
                         <Redirect to='/about' />
-                    </Route> */}
+                    </Route>
 
                     <Route path='/about'>
                         <Jumbotron />
